@@ -1,0 +1,22 @@
+VLA Video Annotation Tool
+
+This project is based heavily on Meta Segment Anything concepts, APIs, and
+model workflows. It provides a browser-based annotation interface and local
+server around SAM-family video segmentation backends.
+
+The original annotation-tool code in this repository is licensed under the
+Apache License 2.0.
+
+Third-party dependencies and model materials are not relicensed by this
+repository:
+
+- Segment Anything Model 2 (SAM 2 / SAM2.1) code, demo code, training code,
+  checkpoints, and related assets are provided by Meta under their own
+  licenses and notices.
+- Segment Anything Model 3 / 3.1 (SAM 3 / SAM3.1) code, checkpoints, and
+  related SAM Materials are provided by Meta under the SAM License and its
+  accompanying terms.
+
+Users are responsible for installing SAM dependencies and model checkpoints
+from their official sources and complying with the applicable Meta licenses,
+acceptable-use terms, export controls, and attribution requirements.

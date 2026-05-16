@@ -1,6 +1,6 @@
 # VLA Video Annotation Tool
 
-面向 VLA/机器人数据的网页式多视角视频分割标注工具。工具默认处理三个同步视角：`head`、`left`、`right`，输出 NumPy mask、bbox、prompt 元数据、可视化 overlay 和手动调整记录。
+面向 VLA/机器人数据的网页式多视角视频分割标注工具。本项目 heavily based on Meta Segment Anything workflows，并将 SAM 系列模型作为外部推理后端。工具默认处理三个同步视角：`head`、`left`、`right`，输出 NumPy mask、bbox、prompt 元数据、可视化 overlay 和手动调整记录。
 
 默认后端：**SAM2.1**，用于 point/box prompt。**SAM3.1** 作为可选后端，适合 text prompt 流程。
 
@@ -152,4 +152,6 @@ outputs/annotations/<episode>/<view>/
 
 ## 开源协议
 
-本项目使用 Apache License 2.0。Meta SAM 的模型代码和权重是独立依赖，受其各自许可证与使用条款约束。
+本项目中原创的标注工具代码使用 Apache License 2.0。
+
+本项目 heavily based on Meta Segment Anything 的概念、API 与模型工作流。Meta SAM 系列代码、模型权重、checkpoint 和相关资源属于独立依赖，受其各自许可证与使用条款约束。归属与第三方许可证说明见 `NOTICE`。

@@ -1,6 +1,6 @@
 # VLA Video Annotation Tool
 
-Browser-based multi-view video segmentation annotation for VLA and robot datasets. It is designed for three synchronized camera views (`head`, `left`, `right`) and writes NumPy masks, boxes, prompt metadata, overlays, and manual edit logs.
+Browser-based multi-view video segmentation annotation for VLA and robot datasets. This project is based heavily on Meta Segment Anything workflows and uses SAM-family models as external inference backends. It is designed for three synchronized camera views (`head`, `left`, `right`) and writes NumPy masks, boxes, prompt metadata, overlays, and manual edit logs.
 
 Default backend: **SAM2.1** for point and box prompts. **SAM3.1** is optional for text-prompt workflows.
 
@@ -152,4 +152,6 @@ This repository intentionally does not include datasets, model weights, generate
 
 ## License
 
-This project is released under the Apache License 2.0. Meta SAM model code and weights are separate dependencies and remain governed by their own licenses and terms.
+This project's original annotation-tool code is released under the Apache License 2.0.
+
+This project is based heavily on Meta Segment Anything concepts, APIs, and model workflows. Meta SAM-family code, model weights, checkpoints, and related assets are separate dependencies and remain governed by their own licenses and terms. See `NOTICE` for attribution and third-party license notes.
