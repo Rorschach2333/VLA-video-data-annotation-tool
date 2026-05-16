@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local data, model weights, caches, and generated annotations.
+data/
+checkpoints/
+outputs/
+.cache/
+*.npy
+*.npz
+*.jsonl
+
+# Keep documentation screenshots tracked.
+!docs/images/*.png

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vla-video-annotator"
+version = "0.1.0"
+description = "Browser-based multi-view video segmentation annotation tool for VLA and robot datasets, powered by SAM2.1 with optional SAM3.1."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "VLA Video Annotation Tool Contributors"}]
+keywords = ["video-annotation", "segmentation", "SAM", "SAM2", "SAM3", "VLA", "robotics"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.26,<2",
+  "Pillow>=10",
+]
+
+[project.scripts]
+vla-video-annotator = "vla_video_annotator.server:main"
+
+[tool.setuptools]
+packages = ["vla_video_annotator"]
+
+[tool.setuptools.package-data]
+vla_video_annotator = ["static/*.html", "static/*.css", "static/*.js"]

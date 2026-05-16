@@ -1,0 +1,2 @@
+recursive-include vla_video_annotator/static *.html *.css *.js
+recursive-include docs/images *.png
