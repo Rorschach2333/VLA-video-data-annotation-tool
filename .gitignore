@@ -1,18 +1,76 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-.DS_Store
-.env
-.venv/
-venv/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
 *.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments and local environment files
+.env
+.envrc
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Test, lint, type-check, and cache outputs
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+cover/
+*.cover
+*.py.cover
+coverage.xml
+nosetests.xml
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+tempCodeRunnerFile.py
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
 
 # Local data, model weights, caches, and generated annotations.
 data/
 checkpoints/
 outputs/
-.cache/
 *.npy
 *.npz
 *.jsonl
